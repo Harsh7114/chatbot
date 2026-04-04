@@ -1,5 +1,7 @@
-from dotenv import load_dotenv
-load_dotenv()
+#from dotenv import load_dotenv
+#load_dotenv()
+import os
+api_key = os.getenv("GOOGLE_API_KEY")
 from langchain_core.output_parsers import StrOutputParser
 parser = StrOutputParser()
 from langchain_google_genai import ChatGoogleGenerativeAI
