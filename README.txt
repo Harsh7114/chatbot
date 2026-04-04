@@ -1,61 +1,61 @@
-# End-To-End LLM QnA Chatbot
+# 🤖 AskBuddy – GenAI QnA Chatbot
 
-### Built with LangChain, Google Gemini & Streamlit (Gen-AI Project)
+🚀 **Live Demo:**
+👉 https://chatbot-ggjjyuhnhdb5gkijdvhappw.streamlit.app/
 
 ---
 
-## 🚀 Project Overview
+## 📌 Project Overview
 
-This project is an **End-to-End Question Answering Chatbot** built using modern Generative AI tools.
-It leverages **LangChain**, **Google Gemini (LLM)**, and **Streamlit** to create an interactive and dynamic chatbot application.
+AskBuddy is an **End-to-End AI-powered Question Answering Chatbot** built using:
 
-The chatbot can answer user queries intelligently using prompt engineering and LLM capabilities.
+* **LangChain** for prompt orchestration
+* **Google Gemini (LLM)** for intelligent responses
+* **Streamlit** for interactive UI
+
+The chatbot allows users to ask questions in real-time and receive AI-generated answers in a clean chat interface.
 
 ---
 
 ## 🧠 Features
 
-* Dynamic prompt generation using LangChain
-* Integration with Google Gemini model
-* Clean and interactive UI using Streamlit
-* Structured output parsing for clean responses
-* Scalable architecture for future upgrades (RAG, memory, etc.)
+* 💬 Chat-style UI (like ChatGPT)
+* 🔁 Session-based chat history
+* ⚡ Fast responses using Gemini Flash model
+* 🧩 Clean integration using LangChain
+* 🌐 Live deployed using Streamlit Cloud
 
 ---
 
 ## 🛠️ Tech Stack
 
 * Python
+* Streamlit
 * LangChain
 * Google Generative AI (Gemini)
-* Streamlit
-* dotenv (for environment variables)
+* python-dotenv
 
 ---
 
 ## 📂 Project Structure
 
 ```
-GENAI/
+chatbot/
 │
-├── apps/
-│   ├── qna_bot.py          # Main chatbot logic
-│   ├── app.py              # Streamlit UI
-│
-├── env/                    # Virtual environment
-├── .env                    # API keys
-├── requirements.txt        # Dependencies
-└── README.txt
+├── qna_bot.py          # Main Streamlit chatbot app
+├── requirements.txt   # Project dependencies
+├── .gitignore         # Ignore env & sensitive files
+└── README.md
 ```
 
 ---
 
-## ⚙️ Setup Instructions
+## ⚙️ Setup Instructions (Run Locally)
 
-### 1. Clone the Repository
+### 1. Clone Repository
 
 ```
-git clone https://github.com/your-username/chatbot.git
+git clone https://github.com/Harsh7114/chatbot.git
 cd chatbot
 ```
 
@@ -88,83 +88,60 @@ GOOGLE_API_KEY=your_api_key_here
 
 ---
 
-### 5. Run the Application
-
-#### Run backend (optional)
+### 5. Run the App
 
 ```
-python qna_bot.py
-```
-
-#### Run Streamlit UI
-
-```
-streamlit run app.py
+streamlit run qna_bot.py
 ```
 
 ---
 
 ## 💡 How It Works
 
-1. User inputs a query
-2. LangChain creates a dynamic prompt
-3. Gemini processes the prompt
-4. Output parser formats response
-5. Streamlit displays the result
+1. User enters a query in the chat input
+2. Query is sent to Gemini via LangChain
+3. Model generates response
+4. Output is parsed and displayed
+5. Chat history is stored using Streamlit session state
 
 ---
 
-## 🔥 Future Improvements
+## ⚠️ Limitations
 
-* Add conversation memory
-* Implement RAG (Retrieval-Augmented Generation)
-* Deploy on cloud (AWS / GCP / Vercel)
-* Add chat history UI
-* Improve prompt engineering
+* ❌ No real-time internet access
+* ❌ Cannot answer latest news/events
+* (Future upgrade: RAG / Search integration)
 
 ---
 
-## 🧪 Example Use Cases
+## 🚀 Future Improvements
 
-* General Q&A assistant
-* Study helper chatbot
-* Interview preparation tool
-* Knowledge assistant
+* 🔍 Add real-time search (RAG)
+* 🧠 Add conversation memory
+* 🎨 Improve UI/UX
+* ☁️ Deploy on custom domain
+* 📄 Chat with PDFs / documents
 
 ---
 
-## 📌 Learnings
+## 📚 Learnings
 
-This project demonstrates:
+This project helped in understanding:
 
 * Prompt engineering
-* LLM integration
 * LangChain pipelines
-* Real-world GenAI application building
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome!
-Feel free to fork this repo and improve the project.
-
----
-
-## 📄 License
-
-This project is open-source and available under the MIT License.
+* LLM integration
+* Streamlit deployment
+* Git & GitHub workflow
 
 ---
 
 ## 🙌 Acknowledgment
 
-Built as part of learning **Generative AI and LLM applications**.
+Built as part of learning **Generative AI & LLM-based applications**.
 
 ---
 
 ## ⭐ Support
 
-If you like this project, give it a ⭐ on GitHub!
-
----
+If you like this project, consider giving it a ⭐ on GitHub!
