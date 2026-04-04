@@ -6,10 +6,17 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 import streamlit as st
 llm = ChatGoogleGenerativeAI(model ="gemini-3-flash-preview")
 
+st.title("🤖 AskBuddy ~ AI QnA Bot")
+st.markdown("My QnA bot with Langchain and Google Gemini")
+#chat window
+query = st.chat_input("Ask Any Question:")
+if query:
+   st.chat_message("user").markdown(query)
+   res= llm.invoke(query)
+   st.chat_message("ai").markdown(res.content[0]["text"])
 
-
-
-"""while True :
+if False:
+    """while True :
     query = input("User:")
 
     if query.lower() in ["quit","exit","bye"]:
