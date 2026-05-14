@@ -1,6 +1,11 @@
-streamlit
 langchain
-langchain-core
+langchain-openai
+dotenv
 langchain-google-genai
-google-generativeai
-python-dotenv
+langchain-groq
+langchain-anthropic
+streamlit
+langchain-ollama
+langchain_groq
+langchain-community
+langgraph
